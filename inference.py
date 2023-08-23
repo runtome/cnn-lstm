@@ -88,6 +88,8 @@ if __name__ == "__main__":
         frame_count = 0
         while True:
             ret, img = cam.read()
+            if not ret:
+                break
             if frame_count == 16:
                 print(len(clip))
                 preds = predict(clip, model)
