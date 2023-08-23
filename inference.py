@@ -82,8 +82,7 @@ if __name__ == "__main__":
         opt.std = get_std(opt.norm_value)
         model.eval()
 
-        cam = cv2.VideoCapture(
-            '/Users/pranoyr/Desktop/v_CricketShot_g11_c05.avi')
+        cam = cv2.VideoCapture(opt.file)
         clip = []
         frame_count = 0
         while True:
