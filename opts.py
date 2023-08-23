@@ -135,6 +135,11 @@ def parse_opts():
 		'--std_norm',
 		action='store_true',
 		help='If true, inputs are normalized by standard deviation.')
+ 
+	parser.add_argument(
+		'--file',
+		type=str,
+		help='File path')
 
 	args = parser.parse_args()
 
